@@ -30,4 +30,3 @@ map('n', '<C-h>', '<C-w>h', default_opts)
 map('n', '<C-l>', '<C-w>l', default_opts)
 map('n', '<C-j>', '<C-w>j', default_opts)
 map('n', '<C-k>', '<C-w>k', default_opts)
-

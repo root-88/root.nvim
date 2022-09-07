@@ -1,6 +1,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
+  use "wbthomason/packer.nvim"
   use "morhetz/gruvbox"                          -- Gruvbox theme
 
   use "nvim-lua/plenary.nvim"                    -- Lua functions
@@ -18,6 +19,7 @@ return require('packer').startup(function()
   use "hrsh7th/cmp-path"                         -- A completion engine plugin
   use "saadparwaiz1/cmp_luasnip"                 -- Luasnip completion source for nvim-cmp
   use "L3MON4D3/LuaSnip"                         -- Snipets
+  use "mhartington/formatter.nvim"
 
   use { 'phaazon/hop.nvim', branch = 'v2' }      -- A navigation plugin
   use {

@@ -19,7 +19,8 @@ local servers = {
   'rust_analyzer',
   'sqls',
   'vuels',
-  'yamlls'
+  'yamlls',
+  'dartls'
 }
 
 require("mason").setup()

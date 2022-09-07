@@ -14,6 +14,7 @@ Works only in Neovim 0.7 or newer.
 - Copy and paste the root.nvim `init.lua` into `$HOME/.config/nvim/init.lua`
 - Copy and paste the root.nvim `lua` into `$HOME/.config/nvim/lua`
 - Start nvim and run `:PackerInstall`.
+- Ignore errors on the first run.
 - Restart neovim
 
 ## Contribution
