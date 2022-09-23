@@ -1,5 +1,7 @@
 local telescope = require "telescope"
 local ok, actions = pcall(require, "telescope.actions")
+local fb_actions = require "telescope".extensions.file_browser.actions
+
 if not ok then
   return
 end
@@ -52,5 +54,21 @@ telescope.setup({
       override_file_sorter = true, -- override the file sorter
       case_mode = "smart_case", -- or "ignore_case" or "respect_case"
     },
+
+    file_browser = {
+      theme = "dropdown",
+      hijack_netrw = true,
+      mappings = {
+        ["i"] = {
+          -- your custom insert mode mappings
+        },
+        ["n"] = {
+          ["N"] = fb_actions.create,
+          -- your custom normal mode mappings
+        },
+      },
+    }
   },
 })
+
+require("telescope").load_extension "file_browser"
