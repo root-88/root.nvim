@@ -33,7 +33,7 @@ cmp.setup({
     { name = "nvim_lsp" },
     { name = "path" },
     { name = "luasnip" },
-    -- { name = "cmp_tabnine" },
+    { name = "cmp_tabnine" },
     { name = "nvim_lua" },
     { name = "buffer" },
     { name = "calc" },

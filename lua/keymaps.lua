@@ -28,35 +28,14 @@ map('n', '<space>p', '<cmd>HopPattern<cr>', default_opts)
 map('n', '<space>e', '<cmd>NvimTreeToggle<cr>', default_opts)
 
 -- Better window movement
--- map('n', '<C-h>', '<C-w>h', default_opts)
--- map('n', '<C-l>', '<C-w>l', default_opts)
--- map('n', '<C-j>', '<C-w>j', default_opts)
--- map('n', '<C-k>', '<C-w>k', default_opts)
+map('n', '<C-h>', '<C-w>h', default_opts)
+map('n', '<C-l>', '<C-w>l', default_opts)
+map('n', '<C-j>', '<C-w>j', default_opts)
+map('n', '<C-k>', '<C-w>k', default_opts)
+
+map('n', '<S-h>', '<cmd> vsplit new<cr>', default_opts)
+map('n', '<S-l>', '<cmd> botright vsplit new<cr>', default_opts)
+map('n', '<S-j>', '<cmd> belowright split new<cr>', default_opts)
+map('n', '<S-k>', '<cmd> split new<cr>', default_opts)
+
 map('n', '<C-f>', '<cmd>WindowsMaximize<cr>', default_opts)
-
-function GoToOrSplit(direction)
-  if direction == "left" then
-    vim.cmd 'topleft vsplit'
-    vim.api
-  end
-
-  if direction == "right" then
-    vim.cmd 'vsplit'
-  end
-
-  if direction == "up" then
-    vim.cmd 'topleft split'
-  end
-
-   if direction == "down" then
-    vim.cmd 'botright split'
-  end
-end
-
-_G.GoToOrSplit = GoToOrSplit
-
-
-map('n', '<C-h>', '<cmd>call v:lua.GoToOrSplit("left")<cr>', default_opts)
-map('n', '<C-l>', '<cmd>call v:lua.GoToOrSplit("right")<cr>', default_opts)
-map('n', '<C-j>', '<cmd>call v:lua.GoToOrSplit("down")<cr>', default_opts)
-map('n', '<C-k>', '<cmd>call v:lua.GoToOrSplit("up")<cr>', default_opts)
