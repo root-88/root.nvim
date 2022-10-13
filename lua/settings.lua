@@ -7,6 +7,7 @@ local opt = vim.opt             -- global/buffer/windows-scoped options
 --common---------------------------------------------------------------
 -----------------------------------------------------------------------
 local default_options = {
+  list = true,
   backup = false,         -- creates a backup file
   fileencoding = "utf-8", -- the encoding written to a file
   ignorecase = true,      -- ignore case in search patterns
@@ -34,6 +35,8 @@ local default_options = {
 for k, v in pairs(default_options) do
   opt[k] = v
 end
+
+opt.listchars:append "space:⋅"
 
 cmd'colorscheme gruvbox'
 

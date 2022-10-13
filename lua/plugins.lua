@@ -24,6 +24,7 @@ return require('packer').startup(function()
   use "saadparwaiz1/cmp_luasnip"                 -- Luasnip completion source for nvim-cmp
   use { "L3MON4D3/LuaSnip" }                     -- Snipets
   use "mhartington/formatter.nvim"
+  use "lukas-reineke/indent-blankline.nvim"      -- Indentation guides to all lines
 
   use { 'phaazon/hop.nvim', branch = 'v2' }      -- A navigation plugin
   use { "anuvyklack/windows.nvim",
