@@ -8,7 +8,7 @@ local luasnip = require("luasnip")
 
 cmp.setup({
   completion = {
-    keyword_length = 1,
+    keyword_length = 2,
   },
 
   source_names = {

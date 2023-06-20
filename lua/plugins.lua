@@ -13,6 +13,7 @@ return require('packer').startup(function()
   use "windwp/nvim-autopairs"                    -- Autopairs
   use "nvim-treesitter/nvim-treesitter"          -- Treesitter - parser generator tool
   use "numToStr/Comment.nvim"                    -- Comments
+  use "f-person/git-blame.nvim"                  -- A git blame plugin for Neovim written in Lua
 
   use "neovim/nvim-lspconfig"                    -- Configurations for Nvim LSP
   use "williamboman/mason.nvim"
